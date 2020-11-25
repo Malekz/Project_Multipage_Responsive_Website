@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 80%;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+  padding-right: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-right: 100px;
+  background-color: #000;
+}
+.nav__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
