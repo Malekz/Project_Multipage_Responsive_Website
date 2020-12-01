@@ -5,7 +5,6 @@
 }
 
 body {
-  max-width: 80%;
   margin: auto;
 }
 
@@ -16,10 +15,13 @@ li {
 
 header {
   background-color: #014e56;
+  min-height: 700px;
 }
 nav {
   display: flex;
   justify-content: space-between;
+  max-width: 80%;
+  margin: auto;
 }
 
 .logo {
