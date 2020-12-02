@@ -1,3 +1,4 @@
+/* Presets */
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +9,28 @@ body {
   margin: auto;
 }
 
+/* Utilities */
+
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20rem;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+li {
   padding-right: 20px;
 }
 
@@ -22,11 +43,11 @@ nav {
   justify-content: space-between;
   max-width: 80%;
   margin: auto;
+  padding-top: 20px;
 }
 
 .logo {
   padding-right: 100px;
-  background-color: #000;
 }
 .nav__right {
   display: flex;
