@@ -10,166 +10,220 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
+
     <title>Frontend Mentor | myteam website challenge - Homepage</title>
+    <!-- Begin Stylesheets -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- End Stylesheets -->
   </head>
+
   <body>
+    <!-- Begin Header -->
     <header>
-      <nav>
-        <div class="nav__right">
-          <a href="#" class="logo">
-            <img src="./images/logo.svg" alt="logo" />
+      <div class="container">
+        <nav class="nav navbar">
+          <a href="/" class="btn-logo" aria-label="MyTeam">
+            <img src="images/logo.svg" alt="Myteam" />
           </a>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">about</a></li>
-        </div>
-        <button><a href="#">contact us</a></button>
-      </nav>
+          <button class="hamburger btn-hamburger" aria-label="menu-items">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="menu-items">
+            <li class="menu-item"><a href="/" class="menu-link">home</a></li>
+            <li class="menu-item">
+              <a href="/about" class="menu-link">about</a>
+            </li>
+            <li class="menu-item">
+              <a href="/contact" class="btn btn-primary--light">contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <section class="hero">
-      <div class="hero-left">
-        <img src="./images/bg-pattern-home-1.svg" alt="bg pattern 1" />
-        <h1>Find the best <span>talent</span></h1>
-      </div>
-      <div class="hero-right">
-        <p>
-          Finding the right people and building high performing teams can be
-          hard. Most companies aren’t tapping into the abundance of global
-          talent. We’re about to change that.
-        </p>
-        <img src="./images/bg-pattern-home-2.svg" alt="" />
-      </div>
-    </section>
+    <!-- End Header -->
 
-    <section class="benefits">
-      <div class="benefits__left">
-        <h2>Build & manage distributed teams like no one else.</h2>
-      </div>
-      <div class="benefits__right">
-        <div>
-          <div class="benefits__right-icon">
-            <img src="./images/icon-person.svg" alt="" />
-          </div>
-          <div class="benefits__right-text">
-            <p>Experienced Indivisuals</p>
-            <p>
-              Our network is made up of highly experienced professionals who are
-              passionate about what they do.
-            </p>
+    <!-- Begin Main -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-banner bg-midnight__green">
+        <div class="container">
+          <div class="hero-banner__content">
+            <div class="hero-banner__content--left">
+              <h1 class="hero-banner__title">
+                Find the<br />
+                best <span class="text-light__coral">talent</span>
+              </h1>
+            </div>
+            <div class="hero-banner__content--right">
+              <div class="divider bg-rapture__blue"></div>
+              <p class="hero-banner__desc">
+                Finding the right people and building high performing teams can
+                be hard. Most companies aren’t tapping into the abundance of
+                global talent. We’re about to change that.
+              </p>
+            </div>
           </div>
         </div>
-        <div>
-          <div class="benefits__right-icon">
-            <img src="./images/icon-cog.svg" alt="" />
-          </div>
-          <div class="benefits__right-text">
-            <p>Easy to Implement</p>
-            <p>
-              Our processes have been refined over years of implementation
-              meaning our teams always deliver.
-            </p>
+      </section>
+      <!-- Service Section -->
+      <section class="service bg-sacramento__state__green">
+        <div class="container">
+          <div class="service-content">
+            <div class="service-content__left">
+              <div class="divider bg-light__coral"></div>
+              <h2 class="service-title">
+                Build & manage distributed teams like no one else.
+              </h2>
+            </div>
+            <div class="service-content__right">
+              <div class="service-item">
+                <img
+                  src="images/icon-person.svg"
+                  alt="Experienced Individuals"
+                  class="service-item__icon"
+                />
+                <div class="service-item__content">
+                  <p class="service-item__label">Experienced Individuals</p>
+                  <p class="service-item__text">
+                    Our network is made up of highly experienced professionals
+                    who are passionate about what they do.
+                  </p>
+                </div>
+              </div>
+              <div class="service-item">
+                <img
+                  src="images/icon-cog.svg"
+                  alt="Easy to Implement"
+                  class="service-item__icon"
+                />
+                <div class="service-item__content">
+                  <p class="service-item__label">Easy to Implement</p>
+                  <p class="service-item__text">
+                    Our processes have been refined over years of implementation
+                    meaning our teams always deliver.
+                  </p>
+                </div>
+              </div>
+              <div class="service-item">
+                <img
+                  src="images/icon-chart.svg"
+                  alt="Enhanced Productivity"
+                  class="service-item__icon"
+                />
+                <div class="service-item__content">
+                  <p class="service-item__label">Enhanced Productivity</p>
+                  <p class="service-item__text">
+                    Our customized platform with in-built analytics helps you
+                    manage your distributed teams.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div>
-          <div class="benefits__right-icon">
-            <img src="./images/icon-chart.svg" alt="" />
-          </div>
-          <div class="benefits__right-text">
-            <p>Enhanced Productivity</p>
-            <p>
-              Our customized platform with in-built analytics helps you manage
-              your distributed teams.
-            </p>
+      </section>
+      <!-- Testimonial Section -->
+      <section class="testimonial bg-deep__jungle__green">
+        <div class="container">
+          <div class="testimonial-content">
+            <h2 class="testimonial-title">
+              Delivering real results for top companies. Some of our
+              <span class="text-rapture__blue">success stories.</span>
+            </h2>
+            <div class="testimonial-item__wrapper">
+              <div class="testimonial-item">
+                <p class="testimonial-item__text">
+                  “The team perfectly fit the specialized skill set required.
+                  They focused on the most essential features helping us launch
+                  the platform eight months faster than planned.”
+                </p>
+                <p class="testimonial-item__name">Kady Baker</p>
+                <p class="testimonial-item__role">
+                  Product Manager at Bookmark
+                </p>
+                <div
+                  class="testimonial-item__avatar"
+                  style="background-image: url('images/avatar-kady.jpg')"
+                ></div>
+              </div>
+              <div class="testimonial-item">
+                <p class="testimonial-item__text">
+                  “We needed to automate our entire onboarding process. The team
+                  came in and built out the whole journey. Since going live,
+                  user retention has gone through the roof!”
+                </p>
+                <p class="testimonial-item__name">Aiysha Reese</p>
+                <p class="testimonial-item__role">Founder of Manage</p>
+                <div
+                  class="testimonial-item__avatar"
+                  style="background-image: url('images/avatar-aiysha.jpg')"
+                ></div>
+              </div>
+              <div class="testimonial-item">
+                <p class="testimonial-item__text">
+                  “Amazing. Our team helped us build an app that delivered a new
+                  experience for hiring a physio. The launch was an instant
+                  success with 100k downloads in the first month.”
+                </p>
+                <p class="testimonial-item__name">Arthur Clarke</p>
+                <p class="testimonial-item__role">Co-founder of MyPhysio</p>
+                <div
+                  class="testimonial-item__avatar"
+                  style="background-image: url('images/avatar-arthur.jpg')"
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="showcase">
-      <h2>
-        Delivering real results for top companies. Some of our success
-        <span>stories</span>
-      </h2>
-
-      <div class="showcase__container">
-        <div class="showcase__container-items">
+      </section>
+      <!-- Contact Us Section -->
+      <section class="contact bg-light__coral">
+        <div class="container">
+          <div class="contact-content">
+            <h2 class="contact-title">Ready to get started?</h2>
+            <a href="/contact" class="btn btn-primary--dark">contact us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End Main -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-widget">
+          <a href="/" class="logo-btn">
+            <img src="images/logo.svg" alt="myteam" />
+          </a>
+          <ul class="menu-items">
+            <li class="menu-item"><a href="/" class="menu-link">home</a></li>
+            <li class="menu-item">
+              <a href="/about" class="menu-link">about</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-widget footer-address">
           <p>
-            “The team perfectly fit the specialized skill set required. They
-            focused on the most essential features helping us launch the
-            platform eight months faster than planned.”
-          </p>
-          <p class="showcase-author">Kady Baker</p>
-          <p class="showcase-position">Product Manager at Bookmark</p>
-          <img src="./images/avatar-kady.jpg" alt="person avatar" />
-        </div>
-
-        <div class="showcase__container-items">
-          <p>
-            “We needed to automate our entire onboarding process. The team came
-            in and built out the whole journey. Since going live, user retention
-            has gone through the roof!”
-          </p>
-          <p class="showcase-author">Aiysha Reese</p>
-          <p class="showcase-position">Founder of Manage</p>
-          <img src="./images/avatar-aiysha.jpg" alt="person avatar" />
-        </div>
-
-        <div class="showcase__container-items">
-          <p>
-            “Amazing. Our team helped us build an app that delivered a new
-            experience for hiring a physio. The launch was an instant success
-            with 100k downloads in the first month.”
-          </p>
-          <p class="showcase-author">Arthur Clarke</p>
-          <p class="showcase-position">Co-founder of MyPhysio</p>
-          <img src="./images/avatar-arthur.jpg" alt="person avatar" />
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <h2>Ready to get started</h2>
-      <button><a href="#">contact us</a></button>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer__left">
-        <div class="footer__left-nav">
-          <img
-            style="background-color: #000"
-            src="./images/logo.svg"
-            alt="logo"
-          />
-          <div class="footer__left-nav-items">
-            <ul>
-              <li><a href="#">home</a></li>
-              <li><a href="#">about</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer__left-address">
-          <p>
-            987 Hillcrest Lane <br />
-            Irvine, CA <br />
-            California 92714 <br />
+            987 Hillcrest Lane<br />
+            Irvine, CA<br />
+            California 92714<br />
             Call Us : 949-833-7432
           </p>
         </div>
-
-        <div class="social">
-          <ul>
-            <li>
-              <img src="./images/icon-facebook.svg" alt="facebook icon" />
-            </li>
-            <li>
-              <img src="./images/icon-pinterest.svg" alt="pinterest icon" />
-            </li>
-            <li>
-              <img src="./images/icon-twitter.svg" alt="twitter icon" />
-            </li>
-          </ul>
-          <p>Copyright 2020. All Rights Reserved</p>
+        <div class="footer-widget footer-social">
+          <div class="social-links">
+            <a href="https://facebook.com" class="social-link">
+              <img src="images/icon-facebook.svg" alt="facebook" />
+            </a>
+            <a href="https://pinterest.com" class="social-link">
+              <img src="images/icon-pinterest.svg" alt="pinterest" />
+            </a>
+            <a href="https://twitter.com" class="social-link">
+              <img src="images/icon-twitter.svg" alt="twitter" />
+            </a>
+          </div>
+          <p class="copyright">Copyright 2020. All Rights Reserved</p>
         </div>
       </div>
     </footer>
