@@ -1,4 +1,4 @@
-// Header Style
+/* Header Style */
 header {
   position: fixed;
   top: 70px;
@@ -114,8 +114,7 @@ header {
   }
 }
 
-// Home Hero
-
+/* Home Hero */
 .hero-banner {
   background: url('../images/bg-pattern-home-1.svg') no-repeat left -100px center;
   background-size: auto;
@@ -146,8 +145,7 @@ header {
   }
 }
 
-// Service Section
-
+/* Service Sectio */
 .service {
   background: url('../images/bg-pattern-home-3.svg') no-repeat bottom right -100px;
   background-size: auto;
@@ -192,8 +190,7 @@ header {
   }
 }
 
-// Testimonial Section
-
+/* Testimonial Section */
 .testimonial {
   color: white;
   background: url('../images/bg-pattern-home-4-about-3.svg') no-repeat top left,
@@ -245,8 +242,7 @@ header {
   }
 }
 
-// Contact Section
-
+/* Contact Section */
 .contact {
   background: url('../images/bg-pattern-home-6-about-5.svg') no-repeat bottom
     left;
@@ -268,7 +264,7 @@ header {
   }
 }
 
-// Footer style
+/* Footer style */
 .footer {
   background-color: $dark_green;
   color: white;
@@ -451,7 +447,7 @@ header {
   z-index: 10;
 }
 
-// Responsive Styles
+/* Responsive Styles */
 @include mq('tablet') {
   .hero-banner {
     background-image: none;
