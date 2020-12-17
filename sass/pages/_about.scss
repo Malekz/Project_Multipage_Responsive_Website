@@ -1,0 +1,160 @@
+//###################################################//
+// ABOUT-HEADER //
+// #################################################//
+
+.header-about {
+  // min-width: 144rem;
+  // height: 51.7rem;
+  background-color: $color-primary-green;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about {
+  padding: 12rem 16.6rem 11.5rem;
+  display: flex;
+  background-image: url('../images/bg-pattern-about-1-mobile-nav-1.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 0 right -10rem;
+  @media screen and (max-width: 1050px) {
+    padding: 12rem 10.5rem 11.5rem;
+  }
+  @media screen and (max-width: 850px) {
+    padding: 12rem 5.5rem 11.5rem;
+  }
+  @media screen and (max-width: 770px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12rem 8.5rem 11.5rem;
+  }
+  @media screen and (max-width: 560px) {
+    padding: 7rem 1.5rem 10.5rem;
+
+    background-position: bottom -10rem right -10rem;
+  }
+
+  &__heading {
+    flex: 0 0 34.3%;
+    font-size: 6.4rem;
+    line-height: 10rem;
+    animation: none;
+    @media screen and (max-width: 560px) {
+      font-size: 4rem;
+    }
+  }
+
+  &__para-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-self: stretch;
+    @media screen and (max-width: 560px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__dashed {
+    margin-bottom: 4rem;
+    width: 4.95rem;
+    height: 0.4rem;
+    background-color: $color-primary-coral;
+    animation: none;
+    @media screen and (max-width: 770px) {
+      display: none;
+    }
+  }
+
+  &__para {
+    margin-bottom: 0.5rem;
+    animation: none;
+  }
+}
+
+.about-nav-btn {
+  animation: none;
+  @media screen and (max-width: 830px) {
+  }
+}
+
+#about-nav-btn,
+#about-nav-list,
+#about-nav-logo {
+  animation: none;
+}
+
+.btn-about {
+  @media screen and (max-width: 1050px) {
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 770px) {
+    padding: 0.5rem 1.8rem;
+  }
+}
+//###################################################//
+// DIRECTORS-SECTION //
+// #################################################//
+
+.directors {
+  padding-top: 14rem;
+  // width: 144rem;
+  // height: 100.2rem;
+  background-color: $color-secondary-dark-green-1;
+  background-image: url('../images/bg-pattern-about-2-contact-1.svg'),
+    url('../images/bg-pattern-home-4-about-3.svg');
+  background-repeat: no-repeat;
+  background-position: top left -10rem, bottom right;
+
+  @media screen and (max-width: 560px) {
+    background-position: top -10rem left -10rem, bottom right;
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__heading {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    color: $color-primary-white;
+    @media screen and (max-width: 770px) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__cards-holder {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6.5rem;
+    padding-bottom: 16.7rem;
+  }
+}
+//###################################################//
+// CLIENTS-SECTION //
+// #################################################//
+
+.clients {
+  // width: 144rem;
+  // height: 43.7rem;
+  background-color: $color-secondary-dark-green-2;
+  background-image: url('../images/bg-pattern-about-4.svg');
+  background-repeat: no-repeat;
+  background-position: top 0 left 0;
+
+  @media screen and (max-width: 560px) {
+    background-position: top -10rem left -10rem;
+  }
+}
