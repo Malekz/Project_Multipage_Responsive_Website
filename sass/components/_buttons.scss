@@ -1,0 +1,57 @@
+//###################################################//
+// Buttons //
+// #################################################//
+
+.btn {
+  background-color: transparent;
+  border-radius: 10rem;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1.1rem 3.05rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  animation: button-move 0.5s linear;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.btn-light {
+  color: $color-primary-white;
+  border: 2px solid $color-primary-white;
+
+  &:hover {
+    background-color: $color-primary-white;
+    color: $color-secondary-dark-green-3;
+  }
+
+  @media screen and (max-width: 1050px) {
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 770px) {
+    padding: 0.5rem 1.8rem;
+  }
+
+  @media screen and (max-width: 560px) {
+    display: none;
+  }
+}
+
+.btn-dark {
+  color: $color-secondary-dark-green-2;
+  border: 2px solid $color-secondary-dark-green-2;
+  animation: none;
+
+  &:hover {
+    background-color: $color-secondary-dark-green-2;
+    color: $color-primary-white;
+  }
+}

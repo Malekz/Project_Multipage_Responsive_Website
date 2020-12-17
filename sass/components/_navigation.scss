@@ -1,0 +1,145 @@
+header {
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+  &.sticky-header {
+    top: 0;
+    padding: 20px 0;
+    background-color: $midnight_green;
+    box-shadow: 0 5px 10px rgba(33, 33, 33, 0.3);
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-logo {
+    display: flex;
+    flex: 0 0 160px;
+    max-width: 160px;
+    text-decoration: none;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .menu-items {
+    display: flex;
+    margin-left: 80px;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+
+    .menu-item {
+      padding: 0 20px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        margin-left: auto;
+        padding-right: 0;
+      }
+    }
+
+    .menu-link {
+      @include bodyText(large);
+      color: $white;
+
+      &:hover {
+        color: $light_coral;
+      }
+    }
+  }
+
+  @include mq('tablet') {
+    top: 64px;
+
+    .container {
+      max-width: 100%;
+      padding: 0 40px;
+    }
+
+    .btn-logo {
+      max-width: 128px;
+    }
+
+    .menu-items {
+      margin-left: 48px;
+    }
+  }
+
+  @include mq('phablet') {
+    top: 48px;
+    &.sticky-header {
+      .menu-items {
+        top: 0;
+      }
+    }
+    .menu-items {
+      position: fixed;
+      display: block;
+      top: -48px;
+      right: -255px;
+      margin: 0;
+      padding: 112px 48px;
+      width: 255px;
+      height: 100vh;
+      flex-direction: column;
+      background: url('../images/bg-pattern-about-1-mobile-nav-1.svg') no-repeat
+        bottom right -100px;
+      background-color: $police_blue;
+      background-size: auto;
+      transition: all 0.3s ease-in-out;
+      z-index: 20;
+      .menu-item {
+        padding: 0;
+        margin-bottom: 24px;
+        &:last-child {
+          margin-top: 36px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .hamburger.active + .menu-items {
+      right: 0;
+    }
+  }
+}
+
+/* Home Hero */
+.hero-banner {
+  background: url('../images/bg-pattern-home-1.svg') no-repeat left -100px center;
+  background-size: auto;
+  color: white;
+  &__content {
+    display: flex;
+    padding: 250px 0;
+    background: url('../images/bg-pattern-home-2.svg') no-repeat right bottom;
+    background-size: auto;
+    &--left {
+      width: 100%;
+      max-width: 635px;
+    }
+    &--right {
+      display: flex;
+      width: 100%;
+      max-width: 445px;
+      margin-left: 30px;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  &__title {
+    @include heading1();
+  }
+  &__desc {
+    @include bodyText(large);
+  }
+}
